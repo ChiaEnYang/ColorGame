@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colorGame</title>
+    <link rel="stylesheet" href="./css/colorGame.css">
+</head>
+
+<body>
+    <div class="home-page page-set">
+        <p class="title">辨色遊戲</p>
+        <p>請找出顏色不同的方塊，盡力在30秒內獲得更多分數!!加油!!</p>
+        <button type="button" class="btn start">開始</button>
+    </div>
+    <div class="pause-page page-set">
+        <p>遊戲暫停</p>
+        <button type="button" class="btn continue">繼續</button>
+    </div>
+    <div class="over-page page-set">
+        <p>遊戲結束，你的分數是<span class="final-score"></span>分!</p>
+        <p><button type="button" class="btn restart">立馬再來一局</button></p>
+        <p><button type="button" class="btn to-home">回到遊戲主頁</button></p>
+    </div>
+    <div class="game-page page-set">
+        <nav>
+            <p class="timer-group">剩餘時間：<span class="timer"></span>&nbsp;<button type="button"
+                    class="btn pause">暫停</button></p>
+            <p>得分：<span class="score"></span></p>
+        </nav>
+        <div class="box-big">
+            <div class="box"></div>
+        </div>
+    </div>
+
+    <script src="./js/colorGame.js"></script>
+</body>
+
+</html>
